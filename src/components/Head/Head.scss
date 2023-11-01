@@ -1,0 +1,79 @@
+@import "../../scss/variables";
+
+.Head {
+  background-color: #ffffff;
+
+  color: $dark;
+
+  .Head__inner {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    padding-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+      padding: 60px 20px;
+    }
+  }
+
+  .Head__wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .Head__left {
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+      width: 50%;
+      margin-bottom: 0;
+
+      text-align: left;
+    }
+
+    h2 {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 15px;
+
+      font-size: 40px;
+      line-height: 1.2;
+
+      @media screen and (min-width: $tablet) {
+        font-size: 60px;
+      }
+    }
+
+    p {
+      margin: 0;
+
+      font-size: 20px;
+      line-height: 1.5;
+
+      @media screen and (min-width: $tablet) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .Head__right {
+    max-width: 400px;
+
+    @media screen and (min-width: $tablet) {
+      width: 50%;
+      max-width: 100%;
+    }
+  }
+
+  .Head__right img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+}

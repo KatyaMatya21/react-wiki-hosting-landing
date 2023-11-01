@@ -1,0 +1,47 @@
+@import "../../scss/variables";
+
+.Footer {
+  background-color: $blue;
+
+  color: $dark;
+
+  .Footer__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  .Footer__logo {
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    background-color: #ffffff;
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .Footer__span {
+    display: block;
+
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+  }
+}

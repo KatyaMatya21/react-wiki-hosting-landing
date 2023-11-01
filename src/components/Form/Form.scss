@@ -1,0 +1,70 @@
+@import "../../scss/variables";
+
+.Form {
+  max-width: 768px;
+  margin: 0 auto;
+
+  color: $dark;
+
+  .Form__group {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .Form__input,
+  .Form__textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 10px 20px;
+
+    border: 2px solid $blue;
+    border-radius: 6px;
+
+    font-weight: 300;
+
+    &:focus {
+      border: 2px solid $blued;
+    }
+  }
+
+  .Form__info {
+    margin: 20px 0;
+
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .Form__button  {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+
+    background-color: $yellow;
+    border: 2px solid $yellow;
+    border-radius: 6px;
+
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: bold;
+
+    @media screen and (min-width: $tablet) {
+      max-width: 320px;
+    }
+  }
+
+  .Form__button:hover,
+  .Form__button:focus {
+    color: $dark;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    cursor: pointer;
+  }
+}
