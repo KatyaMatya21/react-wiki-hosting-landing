@@ -28,8 +28,6 @@ class App extends React.Component {
       <Contacts />
       <Footer />
 
-      <hr/>
-
       <h1>{this.state.helpText}</h1>
       <h2>{this.state.userData}</h2>
       <input placeholder={this.state.helpText}
